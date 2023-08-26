@@ -1,33 +1,51 @@
 -- Création de la table Materiel
-CREATE TABLE Materiel (
-    ID_Materiel SERIAL PRIMARY KEY,
-    Type VARCHAR(50)
-);
-
--- Création de la table Personnel
-CREATE TABLE Personnel (
-    ID_Personnel SERIAL PRIMARY KEY,
-    Nom VARCHAR(50),
-    Prenom VARCHAR(50),
-    Fonction VARCHAR(50),
-    ID_Materiel_Utilise INT UNIQUE REFERENCES Materiel(ID_Materiel)
-);
-
--- Création de la table Panne
-CREATE TABLE etat (
-    ID_Panne SERIAL PRIMARY KEY,
-    Description TEXT,
-    type_etat varchar(120),    
-    ID_Materiel_Panne INT REFERENCES Materiel(ID_Materiel),
-    ID_Personnel_Assigne INT REFERENCES Personnel(ID_Personnel)
+-- Table: Personnel
+------------------------------------------------------------
+CREATE TABLE Personnel(
+	id              SERIAL NOT NULL ,
+	nom_personnel   VARCHAR (200)  ,
+	fonction        VARCHAR (200) NOT NULL  ,
+	CONSTRAINT Personnel_PK PRIMARY KEY (id)
 );
 
 
+------------------------------------------------------------
+-- Table: etat
+------------------------------------------------------------
+CREATE TABLE etat(
+	id                 SERIAL NOT NULL ,
+	type_etat          VARCHAR (200) NOT NULL ,
+	description_etat   VARCHAR (2000)  NOT NULL  ,
+	CONSTRAINT etat_PK PRIMARY KEY (id)
+);
+
+
+------------------------------------------------------------
+-- Table: materials
+------------------------------------------------------------
+CREATE TABLE materials(
+	id               SERIAL NOT NULL ,
+	type_materials   VARCHAR (200) NOT NULL ,
+	id_etat          INT  NOT NULL  ,
+	CONSTRAINT materials_PK PRIMARY KEY (id)
+
+	,CONSTRAINT materials_etat_FK FOREIGN KEY (id_etat) REFERENCES etat(id)
+);
+
+
+------------------------------------------------------------
+-- Table: utilisation
+------------------------------------------------------------
 CREATE TABLE utilisation(
-    id_utilisation SERIAL PRIMARY KEY,
-    date_début TIMESTAMP NOT NULL,
-    date_fin TIMESTAMP NOT NULL, 
-    ID_Personnel_Assigne INT REFERENCES Personnel(ID_Personnel),
-     ID_Materiel_utilisé INT REFERENCES Materiel(ID_Materiel)
-    
-)
+	id             INT  NOT NULL ,
+	id_Personnel   INT  NOT NULL ,
+	date_debut     TIMESTAMP   ,
+	date_fin       TIMESTAMP    ,
+	CONSTRAINT utilisation_PK PRIMARY KEY (id,id_Personnel)
+
+	,CONSTRAINT utilisation_materials_FK FOREIGN KEY (id) REFERENCES materials(id)
+	,CONSTRAINT utilisation_Personnel0_FK FOREIGN KEY (id_Personnel) REFERENCES Personnel(id)
+);
+
+
+
