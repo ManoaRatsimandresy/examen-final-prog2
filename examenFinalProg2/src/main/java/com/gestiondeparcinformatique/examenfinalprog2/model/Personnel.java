@@ -7,6 +7,7 @@ import lombok.*;
 @EqualsAndHashCode
 @ToString
 @AllArgsConstructor
+@NoArgsConstructor
 public class Personnel {
     private int idPersonnel;
 

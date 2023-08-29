@@ -7,6 +7,7 @@ import lombok.*;
 @EqualsAndHashCode
 @AllArgsConstructor
 @ToString
+@NoArgsConstructor
 public class Etat {
 
     private int idEtats;

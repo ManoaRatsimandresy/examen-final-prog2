@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="578278cf-f00d-4b48-8cd3-db70f890daf4" name="Changes" comment="" />
+    <list default="true" id="bde62fef-33f3-4e16-8fa4-579ec50ea711" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAtabase.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DAtabase.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examenFinalProg2/src/main/java/com/gestiondeparcinformatique/examenfinalprog2/model/Personnel.java" beforeDir="false" afterPath="$PROJECT_DIR$/examenFinalProg2/src/main/java/com/gestiondeparcinformatique/examenfinalprog2/model/Personnel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examenFinalProg2/src/main/java/com/gestiondeparcinformatique/examenfinalprog2/model/materials.java" beforeDir="false" afterPath="$PROJECT_DIR$/examenFinalProg2/src/main/java/com/gestiondeparcinformatique/examenfinalprog2/model/materials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examenFinalProg2/src/main/java/com/gestiondeparcinformatique/examenfinalprog2/repositories/MaterialsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/examenFinalProg2/src/main/java/com/gestiondeparcinformatique/examenfinalprog2/repositories/MaterialsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examenFinalProg2/src/main/java/com/gestiondeparcinformatique/examenfinalprog2/repositories/MaterialsRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/examenFinalProg2/src/main/java/com/gestiondeparcinformatique/examenfinalprog2/repositories/MaterialsRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examenFinalProg2/src/main/java/com/gestiondeparcinformatique/examenfinalprog2/repositories/PersonnelRepositories.java" beforeDir="false" afterPath="$PROJECT_DIR$/examenFinalProg2/src/main/java/com/gestiondeparcinformatique/examenfinalprog2/repositories/PersonnelRepositories.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,37 +21,62 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package-info" />
         <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
-  <component name="ProjectId" id="2UWH8ie5lb3KvUTAgcSfTloQZ4m" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2UeGckln6ObVUyyYGTsE3iV1pk9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/examen-final-prog2",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/examen-final-prog2/examenFinalProg2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
+    "spring.configuration.checksum": "39970dea4012223bfd4b92da5f391bd6",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="examen-final-prog2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="examen-final-prog2" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExamenFinalProg2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="examenFinalProg2" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.gestiondeparcinformatique.examenfinalprog2.ExamenFinalProg2Application" />
@@ -55,12 +88,18 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="578278cf-f00d-4b48-8cd3-db70f890daf4" name="Changes" comment="" />
-      <created>1693048260528</created>
+      <changelist id="bde62fef-33f3-4e16-8fa4-579ec50ea711" name="Changes" comment="" />
+      <created>1693292719416</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1693048260528</updated>
-      <workItem from="1693048261535" duration="5917000" />
+      <updated>1693292719416</updated>
+      <workItem from="1693292738972" duration="16361000" />
+      <workItem from="1693320720177" duration="750000" />
+      <workItem from="1693330328387" duration="285000" />
+      <workItem from="1693330727937" duration="299000" />
+      <workItem from="1693331087551" duration="16000" />
+      <workItem from="1693331118692" duration="232000" />
+      <workItem from="1693331754177" duration="70000" />
     </task>
     <servers />
   </component>

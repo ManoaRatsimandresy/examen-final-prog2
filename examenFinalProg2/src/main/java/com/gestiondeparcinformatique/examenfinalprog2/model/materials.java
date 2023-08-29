@@ -7,7 +7,8 @@ import lombok.*;
 @EqualsAndHashCode
 @AllArgsConstructor
 @ToString
-public class materials {
+@NoArgsConstructor
+public class Materials {
     private int idMaterials;
 
     private String typeMaterials;

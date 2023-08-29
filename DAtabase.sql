@@ -15,7 +15,7 @@ CREATE TABLE Personnel(
 CREATE TABLE etat(
 	id                 SERIAL NOT NULL ,
 	type_etat          VARCHAR (200) NOT NULL ,
-	description_etat   VARCHAR (2000)  NOT NULL  ,
+	description_etat   VARCHAR (200)  NOT NULL  ,
 	CONSTRAINT etat_PK PRIMARY KEY (id)
 );
 
@@ -41,6 +41,7 @@ CREATE TABLE utilisation(
 	id_Personnel   INT  NOT NULL ,
 	date_debut     TIMESTAMP   ,
 	date_fin       TIMESTAMP    ,
+	
 	CONSTRAINT utilisation_PK PRIMARY KEY (id,id_Personnel)
 
 	,CONSTRAINT utilisation_materials_FK FOREIGN KEY (id) REFERENCES materials(id)

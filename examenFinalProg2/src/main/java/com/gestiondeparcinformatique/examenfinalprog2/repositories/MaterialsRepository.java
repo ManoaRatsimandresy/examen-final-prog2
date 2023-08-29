@@ -1,13 +1,15 @@
 package com.gestiondeparcinformatique.examenfinalprog2.repositories;
 
-import com.gestiondeparcinformatique.examenfinalprog2.model.materials;
+import com.gestiondeparcinformatique.examenfinalprog2.model.Materials;
 
+
+import java.sql.SQLException;
 import java.util.List;
 
 public interface MaterialsRepository {
-    materials findById(int id);
-    List<materials> findAll();
-    void add(materials materials);
-    void update(materials materials);
-    void delete(int id);
+    Materials findByMaterialsId(int id);
+    List<Materials> findAllMaterials() throws SQLException;
+    void addMaterials(Materials materials) throws SQLException;
+    void updateMaterials(Materials materials) throws SQLException;
+    void deleteMaterials(int id) throws SQLException;
 }
